@@ -1,0 +1,259 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-family: "lato", sans-serif, Roboto;
+  font-weight: 400;
+  background-color: #f1f1f1;
+  min-width: 300px;
+}
+
+.App {
+  margin: 2rem 0;
+  margin-bottom: 5rem;
+}  
+
+
+.header-name {
+    text-align: center;
+}
+
+/* Search Bar CSS */
+
+.search-bar {
+    transition: all .8s ease;
+    text-align: center;
+    position: relative;
+}
+
+.search-bar .icon {
+    position: absolute;
+    padding: 10px;
+    top: -4px;
+    font-size: 20px;
+    min-width: 40px;
+    margin-left: 110px;
+    z-index: 10;
+    cursor: pointer;
+    color: #d01717;
+}
+
+.search-text {
+    color: #585858;
+    width: 320px;
+    font-size: 15px;
+    margin: 2rem auto;
+    display: block;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: none;
+    padding: 20px 10px;
+    transition: all .8s ease;
+}
+
+input:focus, input:hover {
+    border: .5px #777 solid;
+    box-shadow: 0rem 0.5rem 0.7rem #b3b3b3;
+    outline: none;
+    transform: translateY(-5px);
+}
+
+/* Grid CSS */
+
+.row {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col-12 {
+    width: calc(100% / 2);
+    margin: 5px auto;
+}
+
+.row .col-1-of-3 {
+    width: calc(100% / 3);
+    position: relative;
+    display: inline-block;
+}
+
+.row .col-2-of-3 {
+    width: calc(100% / 3 * 2);
+    position: relative;
+    display: inline-block;
+}
+
+/* [class^="col-"]:not(:last-child) {
+    margin-right: 1rem;
+} */
+
+/* Beer Card Style */
+
+.card {
+    height: 150px;
+    max-width: calc(100%/4*3);
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 3px;
+    min-width: 30rem;
+    box-shadow: 0rem 0.7rem 0.7rem #cacaca;
+    transition: all .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+
+.card:active {
+    transform: translateY(-4px);
+}
+
+.card-img {
+    width: 25%;
+    display: inline-block;
+    height: 150px;
+    vertical-align: top;
+}
+
+.card-body {
+    width: 74%;
+    display: inline-block;
+}
+
+
+.beer-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 3px ;
+    border-bottom-left-radius: 3px;
+}
+
+.beer-name {
+    padding: .75rem 1rem 0;
+    text-transform: capitalize;
+}
+
+.beer-style {
+    padding: 0 1rem;
+}
+
+.beer-specs {
+    margin: 1.5rem 1rem;
+    font-size: 14px;
+}
+
+.beer__spec {
+    float: left;
+}
+
+.beer__spec:last-child {
+    margin-left: 2rem;
+}
+
+.beer__spec .label{
+    font-weight: 600;
+}
+
+/* Pagination CSS */
+
+.pagination {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.pagination-text {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.pagination-icon {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0rem 0.7rem 0.7rem #cacaca;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
+  font-size: 15px;
+}
+
+.pagination-icon:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.pagination-icon:active {
+    transform: translateY(-4px);
+}
+
+.pagination-right, .pagination-left, .pagination-center {
+    display: inline-block;
+}
+
+/* Media Query to support responsiveness */
+
+/* Tab Screen */
+@media only screen and (min-width: 46.25em) {
+  .card-img {
+      width: 30%;
+  }
+  .card-body {
+      width: 60%;
+  }
+}
+
+/* Phone Screen */
+@media only screen and (max-width: 37.5em) {
+
+  .card {
+      height: 20rem;
+      min-width: 14rem;
+  }
+
+  .card-img {
+      width: 100%;
+      display: block;
+  }
+
+  .card-body {
+      width: 100%;
+      display: block;
+  }
+
+  .beer-image {
+      width: 100%;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 3px;
+  }
+
+  .beer__spec:last-child {
+      margin-left: 0;
+  }
+
+  .pagination-right, .pagination-left, .pagination-center {
+      display: block;
+      margin: 2rem 0;
+  }
+
+  .pagination-text {
+      margin: 1rem 0;
+  }
+}
