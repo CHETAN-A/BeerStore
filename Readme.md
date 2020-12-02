@@ -32,3 +32,7 @@ And run following commands
     Displays List of 20 Beer Brands per page with their description(name, style, alcohol level, ounces)
     Pagination is enabled to support quick access to first, previous, next and last page.
     Search is enabled per page basis on the brand name.
+
+### Public Hosted Link
+
+https://chetan-rebel.netlify.app/
