@@ -1,4 +1,4 @@
-# Beer Shop
+# Beer Store
 
 ### To run development Version:
 Move into the Main folder in the zip (rebel/)
@@ -22,7 +22,7 @@ And run following commands
 ### Technology Stack:
     ReactJS, HTML, CSS, JS
 
-### React Third Party Library User:
+### React Third Party Library Used:
     Axios
 
 ### List of Screens
