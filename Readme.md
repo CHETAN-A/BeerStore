@@ -1,4 +1,5 @@
-# Beer Shop
+## Beer Shop
+A Resposive Web UI that lists all the Beer brands available in the shop.
 
 ### To run development Version:
 Move into the Main folder in the zip (rebel/)
