@@ -1,7 +1,8 @@
 # Beer Store
+A Responsive Web UI that lists all the Beer brands available in the shop.
 
 ### To run development Version:
-Move into the Main folder in the zip (rebel/)
+Move into the Main folder in the BeerStore/
 And run following commands
 ```
     npm install
@@ -10,7 +11,7 @@ And run following commands
     
 
 ### To run production Version:
-Move into the Main folder in the zip (rebel/)
+Move into the Main folder in the BeerStore/
 And run following commands
 ```
     npm install serve
@@ -32,3 +33,7 @@ And run following commands
     Displays List of 20 Beer Brands per page with their description(name, style, alcohol level, ounces)
     Pagination is enabled to support quick access to first, previous, next and last page.
     Search is enabled per page basis on the brand name.
+
+### Public Hosted Link
+
+https://chetan-rebel.netlify.app/
